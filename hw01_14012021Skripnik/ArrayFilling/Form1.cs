@@ -127,7 +127,34 @@ namespace ArrayFilling
             }
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int n = int.Parse(textBox1.Text);
+            int[] arr = new int[n];
+            arr[0] = 1;
+            arr[1] = 1;
+            int last1 = arr[0];
+            int last2 = arr[1];
+            for (int i = 2; i < n; i++)
+            {
 
+                    arr[i] = last1+last2;
+                                        last1 =  last2;
+last2 = arr[i];
+
+            }
+
+
+            int index = 0;
+            label1.Text += "Заповнити масив, який містить n \nэлементів послідовністю Фібоначі: перші два елемента дорівнюють 1, а \nнаступні дорівнюють сумі двох попередніх. Наприклад(n = 10): 1,\n 1, 2, 3, 5, 8, 13, 21, 34, 55.";
+            //Здесь использую тот же метод
+            foreach (int el in arr)
+            {
+                listBox1.Items.Add("element:" + el + ", index: " + index);
+                index++;
+
+            }
+        }
 
 
 
