@@ -86,6 +86,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Задача 4";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -97,6 +98,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Задача 5";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -108,6 +110,7 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "Задача 6";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // listBox1
             // 
