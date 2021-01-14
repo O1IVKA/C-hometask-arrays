@@ -156,7 +156,46 @@ last2 = arr[i];
             }
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            int n = int.Parse(textBox1.Text);
+            int[] arr = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                arr[i] = rnd.Next(-100, 101);
 
+            }
+            //Здесь я решил написать алгоритм сортировки пузырьком(O(n^2).), но можно использовать и алгоритм быстрой сортировки(средняя мощность -O(n×log2n)).(оба представлены ниже)
+
+            BubbleSort(ref arr);
+            int index = 0;
+            label1.Text += "Заповнити масив, який містить n \nелементів таким чином, щоб він був впорядкований\n за збільшенням (кожний наступний елемент\n масиву більше за попереднє на деяке\n випадкове число).Наприклад(n = 10): -6, -3,\n 1, 3, 5, 6, 10, 15, 16, 20.";
+            //Здесь использую тот же метод
+            foreach (int el in arr)
+            {
+                listBox1.Items.Add("element:" + el + ", index: " + index);
+                index++;
+
+            }
+        }
+        //Алгоритм сортировки пузырьком
+        static int[] BubbleSort(ref int[] arr)
+        {
+            int r;
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                for (int j = 0; j < arr.Length - i - 1; j++)
+                {
+                    if (arr[j + 1] < arr[j])
+                    {
+                        r = arr[j + 1];
+                        arr[j + 1] = arr[j];
+                        arr[j] = r;
+                    }
+                }
+            }
+            return arr;
+        }
 
     }
 }
