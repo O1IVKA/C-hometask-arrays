@@ -1,0 +1,9 @@
+C:\Users\1\Desktop\C-hometask-arrays\hw01_14012021Skripnik\ArrayFilling\bin\Debug\ArrayFilling.exe.config
+C:\Users\1\Desktop\C-hometask-arrays\hw01_14012021Skripnik\ArrayFilling\bin\Debug\ArrayFilling.exe
+C:\Users\1\Desktop\C-hometask-arrays\hw01_14012021Skripnik\ArrayFilling\bin\Debug\ArrayFilling.pdb
+C:\Users\1\Desktop\C-hometask-arrays\hw01_14012021Skripnik\ArrayFilling\obj\Debug\ArrayFilling.csprojAssemblyReference.cache
+C:\Users\1\Desktop\C-hometask-arrays\hw01_14012021Skripnik\ArrayFilling\obj\Debug\ArrayFilling.Form1.resources
+C:\Users\1\Desktop\C-hometask-arrays\hw01_14012021Skripnik\ArrayFilling\obj\Debug\ArrayFilling.Properties.Resources.resources
+C:\Users\1\Desktop\C-hometask-arrays\hw01_14012021Skripnik\ArrayFilling\obj\Debug\ArrayFilling.csproj.GenerateResource.cache
+C:\Users\1\Desktop\C-hometask-arrays\hw01_14012021Skripnik\ArrayFilling\obj\Debug\ArrayFilling.exe
+C:\Users\1\Desktop\C-hometask-arrays\hw01_14012021Skripnik\ArrayFilling\obj\Debug\ArrayFilling.pdb
