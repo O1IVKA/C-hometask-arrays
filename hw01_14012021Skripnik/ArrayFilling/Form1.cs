@@ -28,6 +28,8 @@ namespace ArrayFilling
         private void button1_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
+            label1.Text = " ";
+
             int[] arr = { 37, 0, 50, 46,34,46,0,13 };
             int index  = 0;
             label1.Text+="Заповнити масив з вісьми \nэлементів наступними значеннями: \nперший элемент масиву дорівнює\n 37, другий — 0, третій — 50,\n четвертий — 46, п’ятий — 34, шостий — 46,\n сьомий — 0, восьмий —13.";
@@ -40,7 +42,10 @@ namespace ArrayFilling
         }
 
         private void button2_Click(object sender, EventArgs e)
-        { 
+        {
+            listBox1.Items.Clear();
+            label1.Text = " ";
+
             int n = int.Parse(textBox1.Text);
             int[] arr = new int[n];
             for (int i = 0; i < n/2; i++)
@@ -70,6 +75,9 @@ namespace ArrayFilling
 
         private void button3_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Clear();
+            label1.Text = " ";
+
             int n = int.Parse(textBox1.Text);
             int[] arr = new int[n];
                 for (int i = 0; i < (n+1)/2; i++)
@@ -98,6 +106,9 @@ namespace ArrayFilling
 
         private void button4_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Clear();
+            label1.Text = " ";
+
             int n = int.Parse(textBox1.Text);
             int[] arr = new int[n];
             arr[0] = rnd.Next(1, 101);
@@ -129,6 +140,9 @@ namespace ArrayFilling
 
         private void button5_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Clear();
+            label1.Text = " ";
+
             int n = int.Parse(textBox1.Text);
             int[] arr = new int[n];
             arr[0] = 1;
@@ -138,9 +152,9 @@ namespace ArrayFilling
             for (int i = 2; i < n; i++)
             {
 
-                    arr[i] = last1+last2;
-                                        last1 =  last2;
-last2 = arr[i];
+                arr[i] = last1+last2;
+                last1 =  last2;
+                last2 = arr[i];
 
             }
 
@@ -158,6 +172,9 @@ last2 = arr[i];
 
         private void button6_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Clear();
+            label1.Text =" ";
+
             int n = int.Parse(textBox1.Text);
             int[] arr = new int[n];
             for (int i = 0; i < n; i++)
@@ -165,7 +182,7 @@ last2 = arr[i];
                 arr[i] = rnd.Next(-100, 101);
 
             }
-            //Здесь я решил написать алгоритм сортировки пузырьком(O(n^2).), но можно использовать и алгоритм быстрой сортировки(средняя мощность -O(n×log2n)).(оба представлены ниже)
+            //Здесь я решил написать алгоритм сортировки пузырьком(O(n^2).), но можно использовать и алгоритм быстрой сортировки(средняя мощность - O(n×log2n)).
 
             BubbleSort(ref arr);
             int index = 0;
