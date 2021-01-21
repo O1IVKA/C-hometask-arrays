@@ -198,10 +198,10 @@ namespace SearchАrraySkripnik
             int min1 = arr1[0];
             int zero2=-1;
             double av = arr2[0];
-            int min2 = 0;
             int count_increase1 = 0;
             int count2 = 0;
-            double lowest2= 15;
+            double lowest = 15;
+            int min2 = 0;
             for (int i = 1; i < n; i++)
             {
                 arr2[i] = rnd.Next(-5, 11);
@@ -242,19 +242,20 @@ namespace SearchАrraySkripnik
             for (int i = 0; i < n; i++)
             {
                     int el = arr1[i];
-                    listBox1.Items.Add("ARR 1(14) el: " + el + " index: " + i);
+                    listBox1.Items.Add("ARR 1(14) el: " + el + " day: " + (i+1));
                     el = arr2[i];
-                    listBox1.Items.Add("ARR2(6)  el: " + el + " index: " + i);
+                    listBox1.Items.Add("ARR2(6)  el: " + el + " day: " + (i+1));
                     el = arr3[i];
-                    listBox1.Items.Add("ARR3(absolute number of arr1 -arr2)  el: " + el + " index: " + i);
-                    if (lowest2>Math.Abs(av- arr2[i]))
-                    {
-                        min2 = i;
-                    }
+                    listBox1.Items.Add("ARR3(absolute number of arr1 -arr2)  el: " + el + " day: " + (i+1));
+                if (lowest>Math.Abs((double)arr2[i]-av))
+                {
+                    min2 = i;
+                    lowest = Math.Abs((double)arr2[i] - av);
+                }
             }
             listBox1.Items.Add("lowest day temp: " + min1);
             listBox1.Items.Add("first time when t was lower than o is day number: " + (zero2+1)%7+" week:" +((zero2+1)/7+1));
-            listBox1.Items.Add("day when t the closest to avarage t: day: " + (min2+1)+" avarage t: "+av);
+            listBox1.Items.Add("day when t the closest to avarage t: day: " + (min2 + 1) % 7 + " week:" + ((min2 + 1) / 7 + 1)+" avarage t: " +av);
             listBox1.Items.Add("day t grew up: " + count_increase1 + " times");
             listBox1.Items.Add("morming temp. was bigger than 't': " + count2 + " times");
 
