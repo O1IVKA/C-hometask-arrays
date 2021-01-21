@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayFilling", "ArrayFilling\ArrayFilling.csproj", "{2FEA432F-E8A4-4D02-81C2-13AD80335C1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchАrraySkripnik", "SearchАrraySkripnik\SearchАrraySkripnik.csproj", "{25F995AA-7091-412A-A545-8D790AC1DA19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2FEA432F-E8A4-4D02-81C2-13AD80335C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2FEA432F-E8A4-4D02-81C2-13AD80335C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2FEA432F-E8A4-4D02-81C2-13AD80335C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2FEA432F-E8A4-4D02-81C2-13AD80335C1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25F995AA-7091-412A-A545-8D790AC1DA19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25F995AA-7091-412A-A545-8D790AC1DA19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25F995AA-7091-412A-A545-8D790AC1DA19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25F995AA-7091-412A-A545-8D790AC1DA19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6284223F-4D8D-4197-AB2F-7AEC51B56EB0}
+		SolutionGuid = {F6CFF828-C331-4575-A85C-D53BEDD9D60E}
 	EndGlobalSection
 EndGlobal

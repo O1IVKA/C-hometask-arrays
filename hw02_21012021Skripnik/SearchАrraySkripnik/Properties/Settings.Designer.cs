@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ArrayFilling.Properties
+namespace SearchАrraySkripnik.Properties
 {
 
 
