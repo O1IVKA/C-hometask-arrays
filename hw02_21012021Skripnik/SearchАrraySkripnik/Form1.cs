@@ -12,6 +12,8 @@ namespace SearchАrraySkripnik
 {
     public partial class Form1 : Form
     {   Random rnd = new Random();
+        int n_user =0;
+        int[] arr1;
         public Form1()
         {
             InitializeComponent();
@@ -108,6 +110,46 @@ namespace SearchАrraySkripnik
                 index++;
             }
             listBox1.Items.Add("max of 2/3: " + max );
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            bool sorted = true;
+            listBox1.Items.Clear();
+            label1.Text = "Заполнить массив из n элементов \nс клавиатуры. Определить, является\n ли он упорядоченным по возрастанию.";
+            int n = int.Parse(textBox1.Text);
+            if (arr1==null)
+            {
+                arr1 = new int[n];
+
+            }
+
+            if (n > n_user)
+            {
+                arr1[n_user] = int.Parse(textBox2.Text);
+                listBox1.Items.Add("added: " + arr1[n_user] + " index: " + n_user);
+                n_user++;
+
+            }
+
+                var index = 0;
+                foreach (var el in arr1)
+                {
+                    listBox1.Items.Add("el: " + el + " index: " + index);
+                    index++;
+                }
+
+            for (int i = 1; i < n; i++)
+            {
+                if (arr1[i]<arr1[i-1])
+                {
+                    sorted =false;
+
+                }
+            }
+            listBox1.Items.Add("sorted: " + sorted);
+
 
         }
     }

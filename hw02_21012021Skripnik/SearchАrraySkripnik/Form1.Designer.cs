@@ -37,6 +37,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -73,12 +75,13 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Задача 3";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button4.Location = new System.Drawing.Point(1084, 231);
+            this.button4.Location = new System.Drawing.Point(1084, 261);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(199, 47);
             this.button4.TabIndex = 3;
@@ -89,7 +92,7 @@
             // 
             this.button5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button5.Location = new System.Drawing.Point(1084, 299);
+            this.button5.Location = new System.Drawing.Point(1084, 345);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(199, 47);
             this.button5.TabIndex = 4;
@@ -132,12 +135,30 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 8;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(1084, 228);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Число =";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(1151, 228);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1312, 422);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -166,6 +187,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
