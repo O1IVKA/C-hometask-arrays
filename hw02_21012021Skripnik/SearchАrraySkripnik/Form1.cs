@@ -70,5 +70,45 @@ namespace SearchАrraySkripnik
             }
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            label1.Text = "Заполнить массив из n элементов (n кратно трем) случайными \nвещественными числами в диапазоне [10; 20] с\n точностью до одного знака после запятой.\n Определить максимальное значение в средней трети массива?\n Eсть ли во всем массиве числа, больше\n найденного максимального?";
+            int n = int.Parse(textBox1.Text);
+            double[] arr = new double[n];
+            arr[0]= Math.Round(rnd.NextDouble() * (20 - 10) + 10, 1); 
+            double max = arr[0];
+            for (int i = 1; i < n; i++)
+            {
+                arr[i] = Math.Round(rnd.NextDouble() * (20 - 10) + 10,1);
+                if (max<arr[i])
+                {
+                    max=arr[i];
+
+                }
+            }
+            listBox1.Items.Add("max of all: " + max);
+            max = arr[n/3];
+            for (int i = n/3+1; i < 2*n / 3; i++)
+            {
+                if (max < arr[i])
+                {
+                    max = arr[i];
+
+                }
+            }
+
+            var index = 0;
+            foreach (var el in arr)
+            {
+                listBox1.Items.Add("el: " + el + " index: " + index);
+
+
+                index++;
+            }
+            listBox1.Items.Add("max of 2/3: " + max );
+
+        }
     }
 }
