@@ -152,5 +152,113 @@ namespace SearchАrraySkripnik
 
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            label1.Text = "Заполнить массив A из n элементов случайными целыми\n числами в диапазоне [-10; 10]. Определить, сколько\n раз элементы массива при просмотре от его\n начала меняют знак. Например, в\n массиве { 10, –4, 2, 5, –4, –8}знак меняется 3 аза.";
+            int n = int.Parse(textBox1.Text);
+            int[] arr = new int[n];
+            int count = 0;
+            for (int i = 0; i < n; i++)
+            {
+                arr[i] = rnd.Next(-10, 11);
+            }
+            for (int i = 1; i < n; i++)
+            {
+                if ((arr[i]<0 & arr[i-1]>0)|| (arr[i] > 0 & arr[i - 1] < 0))
+                {
+                    count++;
+
+                }
+            }
+
+            var index = 0;
+            foreach (var el in arr)
+            {
+                listBox1.Items.Add("el: " + el + " index: " + index);
+                index++;
+            }
+                listBox1.Items.Add("count of sign changing: " + count);
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            label1.Text = "Заполнить массив A из n элементов случайными целыми\n числами в диапазоне [-10; 10]. Определить, сколько\n раз элементы массива при просмотре от его\n начала меняют знак. Например, в\n массиве { 10, –4, 2, 5, –4, –8}знак меняется 3 аза.";
+            int n = 14;
+            int[] arr1 = new int[n];
+            int[] arr2 = new int[n];
+            int[] arr3 = new int[n];
+            double t = double.Parse(textBox3.Text);
+            arr2[0] = rnd.Next(-5, 11);
+            arr1[0] = rnd.Next(-5, 11);
+            arr3[0] = Math.Abs(arr1[0] - arr2[0]);
+            int min1 = arr1[0];
+            int zero2=-1;
+            double av = arr2[0];
+            int min2 = 0;
+            int count_increase1 = 0;
+            int count2 = 0;
+            double lowest2= 15;
+            for (int i = 1; i < n; i++)
+            {
+                arr2[i] = rnd.Next(-5, 11);
+                arr1[i] = rnd.Next(-5, 11);
+                arr3[i] = Math.Abs(arr1[i] - arr2[i]);
+
+                av += arr2[i];
+                if (min1 > arr1[i])
+                {
+                min1 = arr1[i];
+                
+                }
+                if (i<n/2 && arr1[i]>arr1[i-1])
+                {
+                    count_increase1++;
+
+                }
+                if (arr2[i] > t && i>n/2)
+                {
+                    count2++;
+                }
+            }            av /= n;
+
+            while (zero2 == -1)
+            {
+                for (int i = 0; i < n; i++)
+                {
+
+                    if (0 > arr2[i])
+                    {
+                        zero2 = i;
+                        break;
+                    }
+                }
+                
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                    int el = arr1[i];
+                    listBox1.Items.Add("ARR 1(14) el: " + el + " index: " + i);
+                    el = arr2[i];
+                    listBox1.Items.Add("ARR2(6)  el: " + el + " index: " + i);
+                    el = arr3[i];
+                    listBox1.Items.Add("ARR3(absolute number of arr1 -arr2)  el: " + el + " index: " + i);
+                    if (lowest2>Math.Abs(av- arr2[i]))
+                    {
+                        min2 = i;
+                    }
+            }
+            listBox1.Items.Add("lowest day temp: " + min1);
+            listBox1.Items.Add("first time when t was lower than o is day number: " + (zero2+1)%7+" week:" +((zero2+1)/7+1));
+            listBox1.Items.Add("day when t the closest to avarage t: day: " + (min2+1)+" avarage t: "+av);
+            listBox1.Items.Add("day t grew up: " + count_increase1 + " times");
+            listBox1.Items.Add("morming temp. was bigger than 't': " + count2 + " times");
+
+
+        }
     }
 }
