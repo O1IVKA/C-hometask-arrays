@@ -23,7 +23,13 @@ namespace SearchАrraySkripnik
             InitializeComponent();
         }
 
-
+         public void fillArray(int n, int max,int min,ref double[] arr)
+        { arr = new double[n];
+            for(int i = 0; i < n; i++)
+            {
+                arr[i]= Math.Round(rnd.NextDouble() * (20 - 10) + 10, 1);
+            }
+        }
 
 
 
