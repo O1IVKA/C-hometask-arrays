@@ -1,0 +1,9 @@
+C:\Users\1\Desktop\C-hometask-arrays\hw03_2801202Skripnik\SearchАrraySkripnik\bin\Debug\SearchАrraySkripnik.exe.config
+C:\Users\1\Desktop\C-hometask-arrays\hw03_2801202Skripnik\SearchАrraySkripnik\bin\Debug\SearchАrraySkripnik.exe
+C:\Users\1\Desktop\C-hometask-arrays\hw03_2801202Skripnik\SearchАrraySkripnik\bin\Debug\SearchАrraySkripnik.pdb
+C:\Users\1\Desktop\C-hometask-arrays\hw03_2801202Skripnik\SearchАrraySkripnik\obj\Debug\SearchАrraySkripnik.Form1.resources
+C:\Users\1\Desktop\C-hometask-arrays\hw03_2801202Skripnik\SearchАrraySkripnik\obj\Debug\SearchАrraySkripnik.Properties.Resources.resources
+C:\Users\1\Desktop\C-hometask-arrays\hw03_2801202Skripnik\SearchАrraySkripnik\obj\Debug\SearchАrrayMethodsSkripnik.csproj.GenerateResource.cache
+C:\Users\1\Desktop\C-hometask-arrays\hw03_2801202Skripnik\SearchАrraySkripnik\obj\Debug\SearchАrraySkripnik.exe
+C:\Users\1\Desktop\C-hometask-arrays\hw03_2801202Skripnik\SearchАrraySkripnik\obj\Debug\SearchАrraySkripnik.pdb
+C:\Users\1\Desktop\C-hometask-arrays\hw03_2801202Skripnik\SearchАrraySkripnik\obj\Debug\SearchАrrayMethodsSkripnik.csprojAssemblyReference.cache
