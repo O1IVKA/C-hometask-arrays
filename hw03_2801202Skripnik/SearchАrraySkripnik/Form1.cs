@@ -23,11 +23,22 @@ namespace SearchАrraySkripnik
             InitializeComponent();
         }
 
-         public void fillArray(int n, int max,int min,ref double[] arr)
-        { arr = new double[n];
-            for(int i = 0; i < n; i++)
+         public void fillArray(int n, int max,int min,ref double[] arr, string type="int")
+        {
+            arr = new double[n];
+            if (type == "double")
             {
-                arr[i]= Math.Round(rnd.NextDouble() * (20 - 10) + 10, 1);
+                for (int i = 0; i < n; i++)
+                {
+                    arr[i] = Math.Round(rnd.NextDouble() * (max - min) + min, 1);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    arr[i] = rnd.Next(min,max) ;
+                }
             }
         }
 
@@ -250,7 +261,7 @@ namespace SearchАrraySkripnik
              * [10; 50]. Написати метод, що визначає, в якій половині масиву більше 
              * парних чисел: в першій або другій. Продемонструвати його роботу.*/
             int n = int.Parse(textBox1.Text);
-            fillArray(n,51,10, ref arr);
+            fillArray(n,51,10, ref arr,"int");
             displayArray(ref arr);
             halfBiggerArray(n,ref arr);
         }
@@ -266,7 +277,7 @@ namespace SearchАrraySkripnik
              * Чи є в усьому масиві числа, більше знайденого максимального?*/
             ;
             int n = int.Parse(textBox1.Text);
-            fillArray(n,21,10, ref arr);
+            fillArray(n,21,10, ref arr,"double");
             double max = arr[n / 3];
             Boolean all_bigger = false;
             maxArray(n,arr,ref max,(n/3),(n/3*2));
@@ -284,7 +295,7 @@ namespace SearchАrraySkripnik
              * Визначити, чи є він упорядкованим за зростанням.*/
             ;
             int n = int.Parse(textBox1.Text);
-            fillArray(n, 11, -10, ref arr);
+            fillArray(n, 11, -10, ref arr,"int");
             displayArray(ref arr);
             sortedArray(n,arr,ref sorted);
         }
@@ -300,7 +311,7 @@ namespace SearchАrraySkripnik
             ;
             int n = int.Parse(textBox1.Text);
             int count = 0;
-            fillArray(n, 11, -10, ref arr);
+            fillArray(n, 11, -10, ref arr,"int");
             displayArray(ref arr);
             signChanges(n, arr, ref count);
         }
@@ -319,8 +330,8 @@ namespace SearchАrraySkripnik
              * визначити, скільки разів за перший тиждень спостерігалося підвищення денної температури в порівнянні з попереднім днем;
              * визначити, кількість днів за останній тиждень, коли ранкова температура була вище, ніж t градусів (температура t вводиться з клавіатури).*/
             int n = 14;
-            fillArray(n, 11, -5, ref arr1);
-            fillArray(n, 11, -5, ref arr2);
+            fillArray(n, 11, -5, ref arr1,"double");
+            fillArray(n, 11, -5, ref arr2, "double");
             double t = double.Parse(textBox3.Text);
             double min1 = arr1[0];
             int zero2=-1;
