@@ -111,6 +111,7 @@
             this.button5.TabIndex = 7;
             this.button5.Text = "Задача 4";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 

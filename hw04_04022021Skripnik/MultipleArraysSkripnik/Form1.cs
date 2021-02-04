@@ -131,5 +131,28 @@ namespace MultipleArraysSkripnik
             printArray(B, listBox1);
             printArray(C, listBox1);
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+                        listBox1.Items.Clear();
+            /*Задача 4_3
+Задача 4_5
+Заповнити масив A з n елементів випадковими числами в діапазоні [0; 40].
+Створити масив B, який буде складатися з елементів масиву A, записаних в зворотному порядку. наприклад,
+елементи масиву A: {7, 16, 21, 5, 31}
+елементи масиву B: {31, 5, 21, 16, 7}
+Вивести всі отримані масиви в ListBox, використавши метод printArray з відповідними параметрами.
+
+*/
+            int n = Convert.ToInt32(textBox1.Text);
+            int[] A = createArray(n, 0, 100);
+            int[] B = new int[n];
+            for (int i =0; i< n; i++)
+            {
+                B[i] = A[(A.Length-i-1)];
+            }
+                printArray(A, listBox1);
+            printArray(B, listBox1);
+        }
     }
 }
