@@ -134,7 +134,28 @@ namespace MultipleArraysSkripnik
 
         private void button5_Click(object sender, EventArgs e)
         {
-                        listBox1.Items.Clear();
+            int n1 = Convert.ToInt32(textBox2.Text);
+            int n2 = Convert.ToInt32(textBox3.Text);
+
+            int[] A = createArray(n1, 0, 100);
+            int[] B = createArray(n2, 0, 100);
+            int[] C = new int[A.Length + B.Length];
+            for (int i = 0; i < A.Length; i++)
+            {
+                C[i] = A[i];
+            }
+            for (int i = 0; i < B.Length; i++)
+            {
+                C[i + A.Length] = B[i];
+            }
+            printArray(A, listBox1);
+            printArray(B, listBox1);
+            printArray(C, listBox1);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
             /*Задача 4_3
 Задача 4_5
 Заповнити масив A з n елементів випадковими числами в діапазоні [0; 40].
@@ -145,14 +166,19 @@ namespace MultipleArraysSkripnik
 
 */
             int n = Convert.ToInt32(textBox1.Text);
-            int[] A = createArray(n, 0, 100);
+            int[] A = createArray(n, 0, 40);
             int[] B = new int[n];
-            for (int i =0; i< n; i++)
+            for (int i = 0; i < n; i++)
             {
-                B[i] = A[(A.Length-i-1)];
+                B[i] = A[(A.Length - i - 1)];
             }
-                printArray(A, listBox1);
+            printArray(A, listBox1);
             printArray(B, listBox1);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
