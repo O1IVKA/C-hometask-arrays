@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SearchАrraySkripnik.Properties
+namespace MultipleArraysSkripnik.Properties
 {
 
 
