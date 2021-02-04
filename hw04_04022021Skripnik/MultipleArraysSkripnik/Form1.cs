@@ -12,17 +12,30 @@ namespace MultipleArraysSkripnik
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
         }
         int[] createArray(int n, int xMin, int xMax)//Инициализируется метод который должен возвращать массив целых чисел
         {
+            Random rnd = new Random(Guid.NewGuid().GetHashCode());//создается екземпляр класса рандом
             int[] rez = new int[n];//создается пустой массив с количеством елементов н
-            Random rnd = new Random();//создается екземпляр класса рандом
             for (int i = 0; i < n; i++)
             {
                 rez[i] = rnd.Next(xMin, xMax + 1);//значению массива под индексом і присваевается рандомное значение от xMin до xMax+1
+            }
+            return rez;//возвращает 
+        }
+        int[] createSortedArray(int n, int xMin, int xMax)//Инициализируется метод который должен возвращать массив целых чисел
+        {
+            Random rnd = new Random(Guid.NewGuid().GetHashCode());//создается екземпляр класса рандом
+
+            int[] rez = new int[n];//создается пустой массив с количеством елементов н
+            rez[0] = rnd.Next(xMin, xMax + 1);
+            for (int i = 1; i < n; i++)
+            {
+                rez[i] = rez[i-1]+rnd.Next(xMin, xMax + 1);//значению массива под индексом і присваевается рандомное значение от xMin до xMax+1
             }
             return rez;//возвращает 
         }
@@ -134,6 +147,11 @@ namespace MultipleArraysSkripnik
 
         private void button5_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Clear();
+            /*Задача 4_4
+            Заповнити масиви A з n1 елементів і B з n2 елементів випадковими числами в діапазоні [0; 100], використавши метод creatArray з відповідними параметрами.
+            Створити масив C, на початку якого будуть перебувати елементи масиву A, а в кінці - елементи масиву B. Вивести всі отримані масиви в ListBox, використавши метод printArray з відповідними параметрами.
+            */
             int n1 = Convert.ToInt32(textBox2.Text);
             int n2 = Convert.ToInt32(textBox3.Text);
 
@@ -156,7 +174,7 @@ namespace MultipleArraysSkripnik
         private void button4_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            /*Задача 4_3
+            /*
 Задача 4_5
 Заповнити масив A з n елементів випадковими числами в діапазоні [0; 40].
 Створити масив B, який буде складатися з елементів масиву A, записаних в зворотному порядку. наприклад,
@@ -179,6 +197,11 @@ namespace MultipleArraysSkripnik
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
