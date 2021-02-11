@@ -181,7 +181,9 @@ namespace TranslationArraySkripnik
         }
 
         private void button5_Click(object sender, EventArgs e)
-        {
+        {/*Задача 5.5
+
+Переставити останній елемент масиву на місце k-го елемента. При цьому k-й, (k + 1) -й, ..., передостанній елементи зсунути вправо на 1 позицію.*/
             listBox1.Items.Clear();
             int n = Convert.ToInt32(textBox1.Text);
             int l = Convert.ToInt32(textBox2.Text);
