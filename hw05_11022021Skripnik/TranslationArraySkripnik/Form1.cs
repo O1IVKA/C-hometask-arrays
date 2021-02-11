@@ -92,7 +92,17 @@ namespace TranslationArraySkripnik
         }
 
         private void button4_Click(object sender, EventArgs e)
-        {
+        {/*Симетрично відобразити елементи масиву, розташовані між
+            максимальним і мінімальним елементами, включаючи їх. 
+            (Вважати, що всі елементи масиву різні). Знов отриманий масив вивести в список.
+
+Наприклад, елементи початкового масиву:
+
+3, 6, 10, 16, 11, 7, 12, 2, 13, 16
+
+Масив після перестановки:
+
+3, 6, 10, 2, 7, 12, 11, 16 13, 1*/
             listBox1.Items.Clear();
             int n = Convert.ToInt32(textBox1.Text);
             int[] c = new int[n];
@@ -119,32 +129,34 @@ namespace TranslationArraySkripnik
             listBox1.Items.Add("min = " + min);
             listBox1.Items.Add("maxi = " + maxi);
             listBox1.Items.Add("mini = " + mini);
-            int n1 = Math.Abs(mini-maxi);
+
+            int n1 = Math.Abs(mini-maxi+1);
+            listBox1.Items.Add("n1 = " + n1);
             if (mini > maxi)
             {
-                for (int i = maxi; i <= (mini-(n1/2)+1); i++)
+                for (int i = maxi; i <= (mini-(n1/2)); i++)
                 {
-                    listBox1.Items.Add("i " + i);
 
-                    p = i;
+                    p = n - (n-mini)- i;
                     k = i + 1;
 
                     swap(k, p, ref c);
                     listBox1.Items.Add("i " + i);
+                    listBox1.Items.Add("mini " + mini);
+
                     listBox1.Items.Add("p " + p);
                 }
             }
             else
             {
-                for (int i = mini; i <= (maxi - (n1 / 2)+1); i++)
+                for (int i = mini; i <= (maxi - (n1 / 2)); i++)
                 {
-
-
-                    p = i;
+                    p = n - (n - maxi ) - i;
                     k = i + 1;
                     swap(k, p, ref c);
                     listBox1.Items.Add("i " +i);
                     listBox1.Items.Add("p " + p);
+                    listBox1.Items.Add("maxi " + maxi);
                 }
             }
             listBox1.Items.Add("after swap = ");
