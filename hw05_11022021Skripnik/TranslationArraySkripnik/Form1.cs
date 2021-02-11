@@ -65,7 +65,10 @@ namespace TranslationArraySkripnik
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
+        {/*Задача 5.2
+            Попарно поміняти в масиві два елементи, що стоять
+            поруч. Знов отриманий масив вивести в список.
+            */
             listBox1.Items.Clear();
             int n = Convert.ToInt32(textBox1.Text);
             int[] c = new int[n];
@@ -149,7 +152,17 @@ namespace TranslationArraySkripnik
         }
 
         private void button3_Click(object sender, EventArgs e)
-        {
+        {/*Задача 5.4
+
+Зсунути всі елементи масиву на один в початок, а перший елемент переставити в кінець. Знов отриманий масив вивести в список.
+
+Наприклад, елементи початкового масиву:
+
+13, 3, 6, 10, 16, 11, 7, 12, 8, 16
+
+Масив після перестановки:
+
+3, 6, 10, 16, 11, 7, 12, 8, 16, 13*/
             listBox1.Items.Clear();
             int n = Convert.ToInt32(textBox1.Text);
             int[] c = new int[n];
