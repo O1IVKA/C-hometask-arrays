@@ -43,10 +43,11 @@ namespace TranslationArraySkripnik
 
             }
             catch (IndexOutOfRangeException e) { }
-
             }
         private void button1_Click(object sender, EventArgs e)
-        {
+        {/*Написати метод-функцію, що створює масив з n елементів, заповнюючи його випадковими числами з
+            указаного діапазону, метод-процедуру, що виводить масив у ListBox. Написати метод-процедуру, 
+            яка міняє значення двох чисел*/
             listBox1.Items.Clear();
             int n = Convert.ToInt32(textBox1.Text);
             int[] c = new int[n];
