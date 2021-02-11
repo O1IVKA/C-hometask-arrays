@@ -66,7 +66,8 @@ namespace TranslationArraySkripnik
 
         private void button2_Click(object sender, EventArgs e)
         {/*Задача 5.2
-            Попарно поміняти в масиві два елементи, що стоять
+            Попарно поміняти в масиві два елементи,
+            що стоять
             поруч. Знов отриманий масив вивести в список.
             */
             listBox1.Items.Clear();
