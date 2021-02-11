@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MultipleArraysSkripnik.Properties
+namespace TranslationArraySkripnik.Properties
 {
 
 

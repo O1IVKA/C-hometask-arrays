@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleArraysSkripnik", "MultipleArraysSkripnik\MultipleArraysSkripnik.csproj", "{BB0B4A1D-EF92-4F96-9E07-94FBFCE8FE57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationArraySkripnik", "TranslationArraySkripnik\TranslationArraySkripnik.csproj", "{41D69336-3CE2-4A3B-B7F1-FC5ED99F9674}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BB0B4A1D-EF92-4F96-9E07-94FBFCE8FE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB0B4A1D-EF92-4F96-9E07-94FBFCE8FE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB0B4A1D-EF92-4F96-9E07-94FBFCE8FE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB0B4A1D-EF92-4F96-9E07-94FBFCE8FE57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41D69336-3CE2-4A3B-B7F1-FC5ED99F9674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41D69336-3CE2-4A3B-B7F1-FC5ED99F9674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41D69336-3CE2-4A3B-B7F1-FC5ED99F9674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41D69336-3CE2-4A3B-B7F1-FC5ED99F9674}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6112FAE9-4F6C-444F-B97A-90D81D968536}
+		SolutionGuid = {013A8D24-B96C-4BC2-B2BC-EDBE7DE9FC91}
 	EndGlobalSection
 EndGlobal
