@@ -36,7 +36,6 @@ namespace TranslationArraySkripnik
             k--;
             try
             {
-                listBox1.Items.Add("swap: " + k + "and " + p);
                 int n = arr[k];
                 arr[k] = arr[p];
                 arr[p] = n;
@@ -45,9 +44,15 @@ namespace TranslationArraySkripnik
             catch (IndexOutOfRangeException e) { }
             }
         private void button1_Click(object sender, EventArgs e)
-        {/*Написати метод-функцію, що створює масив з n елементів, заповнюючи його випадковими числами з
-            указаного діапазону, метод-процедуру, що виводить масив у ListBox. Написати метод-процедуру, 
-            яка міняє значення двох чисел*/
+        {/*Симетрично відобразити елементи масиву. Знов отриманий масив вивести в список.
+
+Наприклад, елементи початкового масиву:
+
+3, 6, 10, 16, 11, 7, 12, 8, 16, 13
+
+Масив після перестановки:
+
+13, 16, 8, 12, 7, 11, 16, 10, 6, 3*/
             listBox1.Items.Clear();
             int n = Convert.ToInt32(textBox1.Text);
             int[] c = new int[n];
@@ -93,9 +98,9 @@ namespace TranslationArraySkripnik
         }
 
         private void button4_Click(object sender, EventArgs e)
-        {/*Симетрично відобразити елементи масиву, розташовані між
-            максимальним і мінімальним елементами, включаючи їх. 
-            (Вважати, що всі елементи масиву різні). Знов отриманий масив вивести в список.
+        {/*Задача 5.3
+
+Симетрично відобразити елементи масиву, розташовані між максимальним і мінімальним елементами, включаючи їх. (Вважати, що всі елементи масиву різні). Знов отриманий масив вивести в список.
 
 Наприклад, елементи початкового масиву:
 
@@ -103,14 +108,14 @@ namespace TranslationArraySkripnik
 
 Масив після перестановки:
 
-3, 6, 10, 2, 7, 12, 11, 16 13, 1*/
+3, 6, 10, 2, 7, 12, 11, 16 13, 16*/
             listBox1.Items.Clear();
             int n = Convert.ToInt32(textBox1.Text);
             int[] c = new int[n];
             int p, k;
             createArray(ref c);
             int maxi=0, mini=0,max=c[0],min=c[0];
-
+            int biggeri, smalleri;
             listBox1.Items.Add("before swaping = ");
             printArray(c);
             for (int i = 1; i < n; i++)
@@ -130,35 +135,23 @@ namespace TranslationArraySkripnik
             listBox1.Items.Add("min = " + min);
             listBox1.Items.Add("maxi = " + maxi);
             listBox1.Items.Add("mini = " + mini);
-
-            int n1 = Math.Abs(mini-maxi+1);
-            listBox1.Items.Add("n1 = " + n1);
             if (mini > maxi)
             {
-                for (int i = maxi; i <= (mini-(n1/2)); i++)
-                {
-
-                    p = n - (n-mini)- i;
-                    k = i + 1;
-
-                    swap(k, p, ref c);
-                    listBox1.Items.Add("i " + i);
-                    listBox1.Items.Add("mini " + mini);
-
-                    listBox1.Items.Add("p " + p);
-                }
+                biggeri = mini;
+                smalleri = maxi;
             }
             else
             {
-                for (int i = mini; i <= (maxi - (n1 / 2)); i++)
-                {
-                    p = n - (n - maxi ) - i;
-                    k = i + 1;
-                    swap(k, p, ref c);
-                    listBox1.Items.Add("i " +i);
-                    listBox1.Items.Add("p " + p);
-                    listBox1.Items.Add("maxi " + maxi);
-                }
+                biggeri = maxi;
+                smalleri = mini;
+            }
+            int n1 = biggeri - smalleri;
+            for (int i = smalleri,j=0; i < (biggeri - (n1 / 2)); i++,j++)
+            {
+
+                p = biggeri - j;
+                k = i + 1;
+                swap(k, p, ref c);
             }
             listBox1.Items.Add("after swap = ");
             printArray(c);
@@ -183,9 +176,9 @@ namespace TranslationArraySkripnik
             createArray(ref c);
             listBox1.Items.Add("before swaping = ");
             printArray(c);
-            for (int i = 0; i <= n ; i++)
+            for (int i = n; i >= 0 ; i--)
             {
-                p = 0;
+                p = n-1;
                 k = i + 1;
                 swap(k, p, ref c);
             }
