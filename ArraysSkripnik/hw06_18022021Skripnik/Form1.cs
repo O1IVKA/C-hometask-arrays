@@ -69,7 +69,15 @@ namespace hw06_18022021Skripnik
             for (int i = 0; i < n; i++)
             {
                 arra[i] = rnd.Next(-10, 11);
+                while(arra[i] == 0)
+                {
+                    arra[i] = rnd.Next(-10, 11);
+                }
                 arrb[i] = rnd.Next(-10, 11);
+                while (arrb[i] == 0)
+                {
+                    arrb[i] = rnd.Next(-10, 11);
+                }
                 if ((arra[i] >= 0 && arrb[i] < 0) || (arra[i] < 0 && arrb[i] >= 0))
                 {
                     sim = false;
