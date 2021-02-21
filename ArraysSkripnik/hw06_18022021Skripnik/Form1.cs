@@ -22,6 +22,13 @@ namespace hw06_18022021Skripnik
                 listBox1.Items.Add(el);
             }
         }
+        void Swap(int i, int j, ref int[] arr)
+        {
+            int n = arr[j];
+                arr[j] = arr[i];
+            arr[i] = n;
+            listBox1.Items.Add("swap "+ i+" with "+j );
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
@@ -130,7 +137,7 @@ namespace hw06_18022021Skripnik
 
 
         private void button4_Click(object sender, EventArgs e)
-        {
+        {   
             listBox1.Items.Clear();
             /*Дан масив. Переписати його елементи в інший масив такого ж розміру наступним чином: спочатку повинні йти 
              * всі негативні елементи, а потім всі інші. Використовувати тільки один прохід по початковому масиву*/
@@ -138,7 +145,40 @@ namespace hw06_18022021Skripnik
             int[] arra = new int[n];
             int[] arrb = new int[n];
             int count = 0;
-            for (int i = 0, j = n - 1, ij = 0; i < n; i++)
+            int c = 0;
+            //Первый вариант
+            for (int i = 0; i < n; i++)
+            {
+                arra[i] = rnd.Next(-100, 101);
+                arrb[i] = arra[i];
+                int p, k;
+                try
+                {
+                    if (arrb[i] < 0 && arrb[i - 1] >= 0)
+                    {
+                        listBox1.Items.Add("arrb[i] = " + arrb[i]);
+                        listBox1.Items.Add("arrb[i-1] = " + arrb[i - 1]);
+                        Swap(i, c, ref arrb);
+                        c++;
+                        for (int j = c; j <= i-1; j++)
+                        {
+                            p = c;
+                            k = j + 1;
+                            Swap(k, p, ref arrb);
+                        }
+                    }
+                    if (arrb[i] > 0 && !(arrb[i - 1] >= 0))
+                    {
+                        c = i;
+                        listBox1.Items.Add("C:" + c);
+                    }
+                }
+                catch (IndexOutOfRangeException eve) { }
+            }
+            //Второй вариант
+
+            /*
+           for (int i = 0, j = n - 1, ij = 0; i < n; i++)
             {
                 arra[i] = rnd.Next(-100, 101);
                 if (arra[i] < 0)
@@ -151,6 +191,33 @@ namespace hw06_18022021Skripnik
                     j--;
                 }
             }
+            */
+            // Третий вариант
+
+            /*
+            for (int i = 0; i < n; i++)
+            {
+                arra[i] = rnd.Next(-100, 101);
+                if (arra[i] < 0)
+                {
+                    count++;
+                }
+            }
+            for (int i = 0, j = count, ij = 0; i < n; i++)
+            {
+                if (arra[i] < 0)
+                {
+                    arrb[ij] = arra[i];
+                    ij++;
+                }
+                else
+                {
+                    arrb[j] = arra[i];
+                    j++;
+                }
+            }
+
+            */
             listBox1.Items.Add("A:");
             display(arra);
             listBox1.Items.Add("B:");
