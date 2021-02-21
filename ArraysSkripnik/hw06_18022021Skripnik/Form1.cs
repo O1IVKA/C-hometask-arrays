@@ -99,7 +99,9 @@ namespace hw06_18022021Skripnik
         {
             listBox1.Items.Clear();
             /*У масиві з 30 елементів числа утворюють неспадна послідовність. Знайти кількість різних чисел в масиві.*/
-
+            int n = int.Parse(textBox1.Text);
+            int[] arra = new int[n];
+            int[] arrb = new int[n];
         }
 
         private void button4_Click(object sender, EventArgs e)
