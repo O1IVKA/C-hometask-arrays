@@ -1,0 +1,9 @@
+C:\Users\1\Desktop\ArraysSkripnik\hw06_18022021Skripnik\bin\Debug\hw06_18022021Skripnik.exe.config
+C:\Users\1\Desktop\ArraysSkripnik\hw06_18022021Skripnik\bin\Debug\hw06_18022021Skripnik.exe
+C:\Users\1\Desktop\ArraysSkripnik\hw06_18022021Skripnik\bin\Debug\hw06_18022021Skripnik.pdb
+C:\Users\1\Desktop\ArraysSkripnik\hw06_18022021Skripnik\obj\Debug\hw06_18022021Skripnik.csprojAssemblyReference.cache
+C:\Users\1\Desktop\ArraysSkripnik\hw06_18022021Skripnik\obj\Debug\hw06_18022021Skripnik.Form1.resources
+C:\Users\1\Desktop\ArraysSkripnik\hw06_18022021Skripnik\obj\Debug\hw06_18022021Skripnik.Properties.Resources.resources
+C:\Users\1\Desktop\ArraysSkripnik\hw06_18022021Skripnik\obj\Debug\hw06_18022021Skripnik.csproj.GenerateResource.cache
+C:\Users\1\Desktop\ArraysSkripnik\hw06_18022021Skripnik\obj\Debug\hw06_18022021Skripnik.exe
+C:\Users\1\Desktop\ArraysSkripnik\hw06_18022021Skripnik\obj\Debug\hw06_18022021Skripnik.pdb

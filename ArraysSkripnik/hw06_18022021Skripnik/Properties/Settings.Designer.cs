@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TranslationArraySkripnik.Properties
+namespace hw06_18022021Skripnik.Properties
 {
 
 
