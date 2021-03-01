@@ -108,9 +108,7 @@ namespace ArraySortSearchSkripnik
         }
         private void button1_Click(object sender, EventArgs e)
         {/*Задача 7.1
-
 Відсортувати методом бульбашки першу половину масиву за спаданням, а другу - по зростанню.
-
 Знову отриманий масив вивести в список.*/
             listBox1.Items.Clear();
             int n = int.Parse(textBox1.Text);
