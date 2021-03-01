@@ -1,0 +1,9 @@
+C:\Users\1\Desktop\hw07_22022021Skripnik\ArraySortSearchSkripnik\obj\Debug\ArraySortSearchSkripnik.csprojAssemblyReference.cache
+C:\Users\1\Desktop\hw07_22022021Skripnik\ArraySortSearchSkripnik\obj\Debug\ArraySortSearchSkripnik.Form1.resources
+C:\Users\1\Desktop\hw07_22022021Skripnik\ArraySortSearchSkripnik\obj\Debug\ArraySortSearchSkripnik.Properties.Resources.resources
+C:\Users\1\Desktop\hw07_22022021Skripnik\ArraySortSearchSkripnik\obj\Debug\ArraySortSearchSkripnik.csproj.GenerateResource.cache
+C:\Users\1\Desktop\hw07_22022021Skripnik\ArraySortSearchSkripnik\bin\Debug\ArraySortSearchSkripnik.exe.config
+C:\Users\1\Desktop\hw07_22022021Skripnik\ArraySortSearchSkripnik\bin\Debug\ArraySortSearchSkripnik.exe
+C:\Users\1\Desktop\hw07_22022021Skripnik\ArraySortSearchSkripnik\bin\Debug\ArraySortSearchSkripnik.pdb
+C:\Users\1\Desktop\hw07_22022021Skripnik\ArraySortSearchSkripnik\obj\Debug\ArraySortSearchSkripnik.exe
+C:\Users\1\Desktop\hw07_22022021Skripnik\ArraySortSearchSkripnik\obj\Debug\ArraySortSearchSkripnik.pdb

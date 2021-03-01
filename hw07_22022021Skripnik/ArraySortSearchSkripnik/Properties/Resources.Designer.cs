@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace hw06_18022021Skripnik.Properties
+namespace ArraySortSearchSkripnik.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace hw06_18022021Skripnik.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("hw06_18022021Skripnik.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ArraySortSearchSkripnik.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

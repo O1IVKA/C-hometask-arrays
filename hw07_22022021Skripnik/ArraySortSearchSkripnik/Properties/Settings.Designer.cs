@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace hw06_18022021Skripnik.Properties
+namespace ArraySortSearchSkripnik.Properties
 {
 
 

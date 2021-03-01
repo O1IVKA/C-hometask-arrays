@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5093F88F-9C70-48C9-97A8-ED0B616ED6C4}</ProjectGuid>
+    <ProjectGuid>{65E27364-0A1B-486F-92F4-36429C8B02BE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>hw06_18022021Skripnik</RootNamespace>
-    <AssemblyName>hw06_18022021Skripnik</AssemblyName>
+    <RootNamespace>ArraySortSearchSkripnik</RootNamespace>
+    <AssemblyName>ArraySortSearchSkripnik</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
