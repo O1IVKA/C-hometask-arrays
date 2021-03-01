@@ -200,7 +200,6 @@ namespace ArraySortSearchSkripnik
 
         private void button4_Click(object sender, EventArgs e)
         {/*Задача 7.4
-
 Відсортувати масив за зростанням. Ввести в текстове поле число. Використовуючи метод бінарного пошуку, знайти в масиві елемент з введенним значенням і вивести його номер. Якщо такого елемента немає, вивести відповідне повідомлення.*/
             listBox1.Items.Clear();
             int n = int.Parse(textBox1.Text);
