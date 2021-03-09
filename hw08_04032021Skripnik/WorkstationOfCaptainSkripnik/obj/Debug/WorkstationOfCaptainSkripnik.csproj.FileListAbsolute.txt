@@ -1,0 +1,9 @@
+C:\Users\1\Desktop\hw08_04032021Skripnik\WorkstationOfCaptainSkripnik\bin\Debug\WorkstationOfCaptainSkripnik.exe.config
+C:\Users\1\Desktop\hw08_04032021Skripnik\WorkstationOfCaptainSkripnik\bin\Debug\WorkstationOfCaptainSkripnik.exe
+C:\Users\1\Desktop\hw08_04032021Skripnik\WorkstationOfCaptainSkripnik\bin\Debug\WorkstationOfCaptainSkripnik.pdb
+C:\Users\1\Desktop\hw08_04032021Skripnik\WorkstationOfCaptainSkripnik\obj\Debug\WorkstationOfCaptainSkripnik.csprojAssemblyReference.cache
+C:\Users\1\Desktop\hw08_04032021Skripnik\WorkstationOfCaptainSkripnik\obj\Debug\WorkstationOfCaptainSkripnik.Form1.resources
+C:\Users\1\Desktop\hw08_04032021Skripnik\WorkstationOfCaptainSkripnik\obj\Debug\WorkstationOfCaptainSkripnik.Properties.Resources.resources
+C:\Users\1\Desktop\hw08_04032021Skripnik\WorkstationOfCaptainSkripnik\obj\Debug\WorkstationOfCaptainSkripnik.csproj.GenerateResource.cache
+C:\Users\1\Desktop\hw08_04032021Skripnik\WorkstationOfCaptainSkripnik\obj\Debug\WorkstationOfCaptainSkripnik.exe
+C:\Users\1\Desktop\hw08_04032021Skripnik\WorkstationOfCaptainSkripnik\obj\Debug\WorkstationOfCaptainSkripnik.pdb
